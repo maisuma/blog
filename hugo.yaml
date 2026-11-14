@@ -1,0 +1,38 @@
+baseURL: https://maisuma.net/
+locale: ja-jp
+title: maisuma.net
+theme: ["PaperMod"]
+
+hasCJKLanguage: true
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+minify:
+  minifyOutput: true
+
+outputs:
+  home: [HTML, RSS, JSON]
+
+menus:
+  main:
+    - name: アーカイブ
+      pageRef: /archives
+      weight: 10
+    - name: タグ
+      pageRef: /tags
+      weight: 20
+    - name: 検索
+      pageRef: /search
+      weight: 30
+
+params:
+  env: production
+  defaultTheme: auto
+  DateFormat: "2006-01-02"
+  ShowReadingTime: true
+  ShowToc: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
