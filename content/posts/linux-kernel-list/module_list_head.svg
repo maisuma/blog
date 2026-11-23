@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 215" font-family="sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+  </defs>
+  <rect width="650" height="215" fill="#fff"/>
+
+  <!-- 先頭 -->
+  <rect x="20" y="80" width="100" height="26" fill="#eee" stroke="#333"/>
+  <text x="70" y="98" text-anchor="middle">modules</text>
+
+  <!-- struct module ×3 -->
+  <g text-anchor="middle">
+    <text x="230" y="32">struct module</text>
+    <text x="390" y="32">struct module</text>
+    <text x="550" y="32">struct module</text>
+  </g>
+  <g fill="none" stroke="#333">
+    <rect x="170" y="40" width="120" height="135"/>
+    <rect x="330" y="40" width="120" height="135"/>
+    <rect x="490" y="40" width="120" height="135"/>
+  </g>
+
+  <!-- メンバー -->
+  <g stroke="#999" fill="#fff">
+    <rect x="185" y="50" width="90" height="26"/>
+    <rect x="185" y="110" width="90" height="26"/>
+    <rect x="345" y="50" width="90" height="26"/>
+    <rect x="345" y="110" width="90" height="26"/>
+    <rect x="505" y="50" width="90" height="26"/>
+    <rect x="505" y="110" width="90" height="26"/>
+  </g>
+  <g fill="#dbeafe" stroke="#333">
+    <rect x="185" y="80" width="90" height="26"/>
+    <rect x="345" y="80" width="90" height="26"/>
+    <rect x="505" y="80" width="90" height="26"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="230" y="68">state</text>
+    <text x="230" y="98">list</text>
+    <text x="230" y="128">name</text>
+    <text x="230" y="160">…</text>
+    <text x="390" y="68">state</text>
+    <text x="390" y="98">list</text>
+    <text x="390" y="128">name</text>
+    <text x="390" y="160">…</text>
+    <text x="550" y="68">state</text>
+    <text x="550" y="98">list</text>
+    <text x="550" y="128">name</text>
+    <text x="550" y="160">…</text>
+  </g>
+
+  <!-- 双方向リンク(list 同士) -->
+  <g stroke="#333" stroke-width="1.5" fill="none" marker-start="url(#a)" marker-end="url(#a)">
+    <line x1="122" y1="93" x2="183" y2="93"/>
+    <line x1="277" y1="93" x2="343" y2="93"/>
+    <line x1="437" y1="93" x2="503" y2="93"/>
+    <polyline points="597,93 630,93 630,200 70,200 70,108"/>
+  </g>
+</svg>

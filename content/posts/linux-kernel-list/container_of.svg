@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" font-family="sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+  </defs>
+  <rect width="400" height="140" fill="#fff"/>
+
+  <!-- struct module -->
+  <text x="200" y="22" text-anchor="middle">struct module</text>
+  <rect x="140" y="30" width="120" height="30" fill="#fff" stroke="#333"/>
+  <rect x="140" y="60" width="120" height="30" fill="#dbeafe" stroke="#333"/>
+  <rect x="140" y="90" width="120" height="30" fill="#fff" stroke="#333"/>
+  <g text-anchor="middle">
+    <text x="200" y="50">state</text>
+    <text x="200" y="80">list</text>
+    <text x="200" y="110">name</text>
+  </g>
+
+  <!-- mod と p -->
+  <text x="60" y="35">mod</text>
+  <line x1="95" y1="31" x2="138" y2="31" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="70" y="80">p</text>
+  <line x1="95" y1="75" x2="138" y2="75" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- offset -->
+  <g stroke="#333" stroke-width="1.5">
+    <line x1="275" y1="30" x2="275" y2="60"/>
+    <line x1="269" y1="30" x2="281" y2="30"/>
+    <line x1="269" y1="60" x2="281" y2="60"/>
+  </g>
+  <text x="288" y="50">offset</text></svg>
